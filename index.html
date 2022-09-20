@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/pokemon-pokeball.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <img src="assets/images/Pokemon.png" alt="Pokemon logo">
+        </div>
+        <div class="form-container">
+            <form id="formulario">
+                <input type="text" name="nombre" id="nombre" placeholder="Pokemon">
+                <button id="buscar" type="submit" onclick="buscarPokemon()">Buscar</button>
+            </form>
+        </div>
+        <div id="pokemon-container" class="info-container">
+           
+        </div>
+    </div>
+    <div id="toast">
+        <div class="toast-content">
+            <h3 id="title" class="toast-title"></h3>
+            <p id="message" class="toast-message"></p>
+        </div>
+    </div>
+    <div id="btnToTop" class="scroll-to-top">
+        <button onclick="goTo(0)">
+            <i class="fad fa-angle-up"></i>
+        </button>
+    </div>
+    <div id="audio" class="audio">
+        <button onclick="audioControl()">
+            <i id="audioIcon" class="fad fa-play"></i>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
